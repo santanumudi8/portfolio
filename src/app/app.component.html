@@ -5,17 +5,17 @@
       <span>Santanu Mudi</span>
     </div>
     <div class="list">
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Projects</li>
-      <li>Contact</li>
+      <li (click)="scroll(home)">Home</li>
+      <li (click)="scroll(about)">About</li>
+      <li (click)="scroll(skills)">Skills</li>
+      <li (click)="scroll(projects)">Projects</li>
+      <li (click)="scroll(contact)">Contact</li>
     </div>
   </div>
 
-  <div class="home">
+  <div #home class="home">
     <div class="img-area">
-      <img src="./assets/Pic1.jpg" alt="" />
+      <img src="./assets/ProfilePic.jpeg" alt="" />
     </div>
     <div class="headline">
       <h2>Hi, I'm Santanu Mudi</h2>
@@ -25,17 +25,19 @@
       </p>
     </div>
   </div>
-  <div class="about">
+  <div #about class="about">
     <h2>All About Me</h2>
     <div class="gif-area">
       <img src="./assets/Gif1.gif" alt="" />
     </div>
     <p>
-      Aspiring Java Backend Developer enthusiastic to learn and explore new
-      technologies. 1200+ hours of practical experience building numerous
-      websites and applications. Solved more than 500 data structure questions.
-      Strongly interested in obtaining a backend developer position to create
-      impactful and scalable products.
+      Experienced Java Backend Developer with 2+ years of expertise in designing
+      and implementing REST APIs. Proven track record in creating reliable and
+      scalable solutions, backed by solid knowledge of Data Structures and
+      Algorithms. Proficient in JUnit and Mockito for rigorous testing.
+      Passionate about staying updated on industry trends and implementing
+      innovative concepts. Eager to contribute to dynamic projects with a focus
+      on efficiency and quality.
     </p>
     <div class="about-list">
       <ul>
@@ -43,95 +45,78 @@
         <li>DSA</li>
         <li>Soft Skills</li>
       </ul>
-      <ul>
+      <!-- <ul>
         <li>1200+ hrs</li>
         <li>700+ Que</li>
         <li>100+ hrs</li>
-      </ul>
+      </ul> -->
     </div>
   </div>
-  <div class="skills">
+  <div #skills class="skills">
     <h2>Tech Stack</h2>
     <div class="skills-grid">
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
+        <img src="/assets/java.png" alt="" />
         <p>Java</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/spring-boot.png" alt="" />
+        <p>Spring Boot</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/hibernate.png" alt="" />
+        <p>Hibernate</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/mysql.png" alt="" />
+        <p>MySql</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/maven.png" alt="" />
+        <p>Maven</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/html.png" alt="" />
+        <p>HTML</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/css.png" alt="" />
+        <p>CSS</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/eclipse.png" alt="" />
+        <p>Eclipse</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/vscode.png" alt="" />
+        <p>VS Code</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/angular.png" alt="" />
+        <p>Angular</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/git.png" alt="" />
+        <p>Git</p>
       </div>
       <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
-      </div>
-      <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
-      </div>
-      <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
-      </div>
-      <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
-      </div>
-      <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
-      </div>
-      <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
-      </div>
-      <div class="grid-item">
-        <img src="/assets/java.png" alt="">
-        <p>Java</p>
+        <img src="/assets/rest.png" alt="" />
+        <p>REST</p>
       </div>
     </div>
   </div>
-  <div class="projects">
+  <div #projects class="projects">
     <h2>Projects</h2>
   </div>
-  <div class="contact">
+  <div #contact class="contact">
     <h2>Contacts</h2>
+    <p>Get In Touch With Me</p>
+    <div class="my-details">
+      <p>Santanu Mudi</p>
+      <p>+919064020193</p>
+      <p>santanumudi8@gmail.com</p>
+      <p>Bankura, West Bengal</p>
+    </div>
   </div>
 
   <div class="footer"></div>

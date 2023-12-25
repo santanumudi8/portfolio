@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'music-player';
+  title = 'protfolio';
+  scroll(el:HTMLElement){
+    el.scrollIntoView({behavior: 'smooth'});
+  }
+
 }
